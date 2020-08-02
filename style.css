@@ -1,0 +1,188 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    background:#fff;
+    width: 100%;
+    position: relative;
+}
+.navbar{
+    width: 100%;
+    padding: 25px 0;
+    position: static;
+}
+.navbar__list{
+    margin:0;
+    padding: 0;
+    display:flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+   position: static!important;
+}
+.navbar__list__item{
+    position: relative;
+    cursor: pointer;
+}
+.navbar__list__item:after{
+    content: "";
+    display:block;
+    position: absolute;
+    background:transparent;
+    height: 30px;
+    width: 100%;
+}
+.navbar__list__item__full:after{
+    content: "";
+    display:block;
+    position: absolute;
+    background:transparent;
+    height: 40px;
+    width: 100%;
+}
+.navbar__list__item__text{
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-right: 5px;
+    color:rgb(23,19,71);
+    transition: all .3s;
+}
+.navbar__list__item__icon{
+    font-size: 10px;
+     transition: all .3s;
+}
+.navbar__list__item:hover .navbar__list__item__text,.navbar__list__item:hover .navbar__list__item__icon{
+    color:#008aff;
+}
+.navbar__list__item:hover .navbar__list__item__dropdown,.navbar__list__item:hover .navbar__list__item__dropdown__full{
+    display:block;
+}
+.navbar__button{
+    border:2px solid rgb(255,190,61);
+    text-transform: capitalize;
+    background:rgb(255,190,61);
+    padding: 5px 17px;
+    font-size: 14px;
+    border-radius: 7px;
+    color:#fff;
+    transition: all .5s;
+}
+.navbar__button:hover{
+    color:rgb(255,190,61);
+    background:#fff;
+}
+.navbar__list__item__dropdown{
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin:0;
+    width: 180px;
+    top:calc(100% + 25px);
+    box-shadow:  0px 26px 21px 0px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    border-top: 3px solid #008aff;
+    animation:hideIn1 .5s forwards;
+    display:none;
+    z-index: 2;
+    background:#fff;
+}
+.navbar__list__item__dropdown__full{
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin:0;
+    width: 100%;
+    left:0;
+    top:80px;
+    box-shadow:  0px 26px 21px 0px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    border-top: 3px solid #008aff;
+    animation:hideIn1 .5s forwards;
+    display:none;
+    z-index: 2;
+    background:#fff;
+}
+.navbar__list__item__full{
+    position: static;
+}
+.navbar__list__item__dropdown__item{
+    padding:10px 0 10px 15px;
+    color:rgb(113,128,150);
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 400;
+}
+.navbar__list__item__dropdown__item:hover{
+    color:#008aff;
+}
+.navbar__list__item__dropdown__full__item__logo{
+    font-size: 16px;
+    text-transform: capitalize;
+    margin:15px 0;
+}
+.navbar__list__item__dropdown__full__item__list{
+    padding: 0;
+    margin:0;
+    list-style: none;
+}
+.navbar__list__item__dropdown__full__item__list__item{
+    display:flex;
+    align-items: center;
+    margin:10px 0;
+    color:rgb(113,128,150);
+}
+.navbar__list__item__dropdown__full__item__list__item:hover{
+    color:#008aff;
+    transition: all .3s;
+}
+.navbar__list__item__dropdown__full__item__list__item__text{
+    text-transform: capitalize;
+    margin-left: 12px;
+    font-size: 14px;
+    font-weight: 400
+}
+
+
+.header_introduce{
+    margin-top: 50px;
+}
+.header__introduce__content__top{
+    background:rgb(23,19,71);
+    color:#fff;
+    padding: 3px 10px;
+    margin:20px 0;
+    display:inline-block;
+    border-radius: 15px;
+}
+.header__introduce__content__title{
+    font-size: 50px;
+    font-weight: 700;
+    color:rgb(23,19,71);
+    font-family:"Space Grotesk", sans-serif;
+    margin:20px 0;
+}
+.header__introduce__content__desc{
+    font-size: 16px;
+    color:rgb(113,128,150);
+}
+.header__introduce__content__btn{
+    border: 2px solid rgb(23,19,71); ;
+    outline: none;
+    border-radius: 10px;
+    padding: 15px 25px;
+    background:rgb(23,19,71); 
+    color:#fff;
+    text-transform: capitalize;
+    transition: all .5s;
+}
+.header__introduce__content__btn span{
+    margin-right: 10px;
+}
+.header__introduce__content__btn:hover{
+    color:rgb(23,19,71);
+    background:#fff;
+}

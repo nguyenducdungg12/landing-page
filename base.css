@@ -48,6 +48,6 @@
     background:#008aff;
     
 }
-.bg-3:after{
+.bg-3:hover:after{
     opacity: 0;
 }

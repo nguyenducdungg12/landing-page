@@ -442,3 +442,100 @@
     line-height: 26px;
     font-weight: 400;
 }
+.main__support2{
+    background:#F2F3FA;
+}
+.main__support2__left{
+    padding:72px;
+}
+.main__support2__title--main{
+    font-weight: 500;
+    font-size: 40px;
+    color:#171347;
+}
+.main__support2__desc--main{
+    color:#718096;
+    font-size: 18px;
+    margin:25px 0;
+}
+.main__support2__list__title{
+    display:flex;
+    align-items: center;
+}
+.main__support2__list__title__number{
+    color:#008aff;
+    font-size: 25px;
+    font-weight: bold;
+}
+.main__support2__list__title__text{
+    margin-left: 10px;
+}
+.main__support2__list__content{
+    color:#818994;
+    font-weight: 400;
+}
+.main__support2__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main__statistical{
+    padding:100px 0;
+    background:#fff;
+}
+.main__statistical__item{
+    width: 255px;
+    height: 175px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    padding:15px;
+    border: 1px solid #f2f3fa;
+    position: relative;
+}
+.main__statistical__item:after,.main__statistical__item::before{
+    content:"";
+    display:block;
+    position: absolute;
+}
+.main__statistical__item:after{
+    top:0;
+    right:0;
+}
+.main__statistical__item::before{
+    bottom: 0;
+    left:0;
+}
+.main__statistical__item:hover:after{
+    animation: animation1 .5s forwards;
+    border-top-width: 5px;
+    border-right-width: 5px;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+
+    border-style: solid;
+    border-color: #008aff;
+} 
+ .main__statistical__item:hover:before{
+      animation: animation1 .5s forwards;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-style: solid;
+    border-color: #008aff;
+} 
+
+.main__statistical__icon{
+    font-size: 45px;
+}
+.main__statistical__item__number{
+    font-weight: bold;
+    font-size: 30px;
+}
+.main__statistical__item__desc{
+    color:#718096;
+    font-size: 16px;
+}

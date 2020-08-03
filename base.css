@@ -35,3 +35,19 @@
         width: 100%;
     }
 }
+.bg-1{
+    background-image: url(./img/bg-2.jpg);
+    background-size: cover;
+}
+.bg-2
+{
+    background-image: url(./img/blog-3.jpg);
+    background-size: cover;
+}
+.bg-3{
+    background:#008aff;
+    
+}
+.bg-3:after{
+    opacity: 0;
+}
